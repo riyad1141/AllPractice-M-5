@@ -10,7 +10,9 @@ import LoopWeather from "./components/Practice/LoopWeather.vue";
 import Event from "./components/Practice/Event.vue";
 import EventLoop from "./components/Practice/EventLoop.vue";
 import EventImage from "./components/Practice/EventImage.vue";
-
+import AllEvent from "./components/Hasin/AllEvent.vue";
+import ChatEvent from "./components/Hasin/ChatEvent.vue";
+import InputEvent from "./components/Hasin/InputEvent.vue";
 
 const numbers = [1, 2, 3, 4, 5, 6, 7];
 
@@ -32,71 +34,78 @@ const persons = {
 
 <template>
 
-  <p v-for="(number,index) in numbers" :key="index" >{{number}}</p>
+<!--  <p v-for="(number,index) in numbers" :key="index" >{{number}}</p>-->
 
-  <h1>In Progress</h1>
-  <ul>
-    <template v-for="todo in todos" :key="todo.id">
-      <li v-show="'In Progress' === todo.status">
-        {{todo.task}}
-      </li>
-    </template>
-  </ul>
+<!--  <h1>In Progress</h1>-->
+<!--  <ul>-->
+<!--    <template v-for="todo in todos" :key="todo.id">-->
+<!--      <li v-show="'In Progress' === todo.status">-->
+<!--        {{todo.task}}-->
+<!--      </li>-->
+<!--    </template>-->
+<!--  </ul>-->
 
-  <h1>Pending</h1>
-  <ul>
-    <template v-for="todo in todos" :key="todo.id">
-      <li v-show="'Pending' === todo.status">
-        {{todo.task}}
-      </li>
-    </template>
-  </ul>
+<!--  <h1>Pending</h1>-->
+<!--  <ul>-->
+<!--    <template v-for="todo in todos" :key="todo.id">-->
+<!--      <li v-show="'Pending' === todo.status">-->
+<!--        {{todo.task}}-->
+<!--      </li>-->
+<!--    </template>-->
+<!--  </ul>-->
 
-  <h1>Done</h1>
-  <ul>
-    <template v-for="todo in todos" :key="todo.id">
-      <li v-show="'Done' === todo.status">
-        {{todo.task}}
-      </li>
-    </template>
-  </ul>
-
-
-
-  <ul>
-    <template v-for="todo in todos" :key="todo.id">
-      <li class="list" :class="{'line':('Done' === todo.status)}">
-        {{todo.task}}
-      </li>
-    </template>
-  </ul>
+<!--  <h1>Done</h1>-->
+<!--  <ul>-->
+<!--    <template v-for="todo in todos" :key="todo.id">-->
+<!--      <li v-show="'Done' === todo.status">-->
+<!--        {{todo.task}}-->
+<!--      </li>-->
+<!--    </template>-->
+<!--  </ul>-->
 
 
-  <h1>Person</h1>
-  <p v-for="(person,key,index) in persons" :key="index">{{key +":"+person}}</p>
+
+<!--  <ul>-->
+<!--    <template v-for="todo in todos" :key="todo.id">-->
+<!--      <li class="list" :class="{'line':('Done' === todo.status)}">-->
+<!--        {{todo.task}}-->
+<!--      </li>-->
+<!--    </template>-->
+<!--  </ul>-->
 
 
-  <Reactivity/>
+<!--  <h1>Person</h1>-->
+<!--  <p v-for="(person,key,index) in persons" :key="index">{{key +":"+person}}</p>-->
+
+
+<!--  <Reactivity/>-->
 
   <Task/>
 
-<ClassBinding/>
+<!--<ClassBinding/>-->
 
-  <StyleBinding/>
+<!--  <StyleBinding/>-->
 
-  <Loop/>
+<!--  <Loop/>-->
 
-  <LoopArray/>
+<!--  <LoopArray/>-->
 
-  <LoopMember/>
+<!--  <LoopMember/>-->
 
-  <LoopWeather/>
+<!--  <LoopWeather/>-->
 
-  <Event/>
+<!--  <Event/>-->
 
-  <EventLoop/>
+<!--  <EventLoop/>-->
 
-  <EventImage/>
+<!--  <EventImage/>-->
+
+<!--  <AllEvent/>-->
+
+<!--  <InputEvent/>-->
+
+<!--  <ChatEvent/>-->
+
 
 
 </template>
